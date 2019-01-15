@@ -19,16 +19,19 @@ namespace YGOSharp
         {
             nullName = InterString.Get("未知卡片");
             nullString = "";
-            nullString += "欢迎使用：\r\nYGOPro2";
+            nullString += "YGOPro2\nOCGCORE 0x1348";
             nullString += "\r\n\r\n";
-            nullString += "软件下载：";
-            nullString += "\r\n①：[url=https://pan.baidu.com/s/1PEulJRq8ztugD7PtH0ZSlA][u]https://pan.baidu.com/s/1PEulJRq8ztugD7PtH0ZSlA[/u][/url]";
-            nullString += "\r\n\r\n②：[url=https://github.com/Unicorn369/YGOPro2_Data][u]https://github.com/Unicorn369/YGOPro2_Data[/u][/url]";
-            nullString += "\r\n\r\n\r\n";
-            nullString += "欢迎加入QQ群：";
-            nullString += "\r\n①：[url=https://jq.qq.com/?_wv=1027&k=5nq6xJe][u]649612818[/u][/url]";
-            nullString += "\r\n②：[url=https://jq.qq.com/?_wv=1027&k=5idyod3][u]559276772[/u][/url]";
-            nullString += "\r\n③：[url=https://jq.qq.com/?_wv=1027&k=5kMUyu2][u]614684407[/u][/url]";
+            nullString += "English translation done by AntiMetaman.";
+            //if (File.Exists("config/link.conf"))
+            //{
+            nullString += "\r\n";
+            nullString += "[url=http://ygopro2.lofter.com/lisence][u]http://ygopro2.lofter.com/lisence[/u][/url]";
+            nullString += "\r\n\r\n";
+            nullString += "[url=https://duelistsunite.org/][u]Official english website.[/u][/url]\r\n";
+            nullString += "[url=https://discord.gg/NTd2vJJ][u]Official english discord.[/u][/url]\r\n";
+            //}
+            nullString += "\r\n\r\n";
+            //nullString += "\r\n[url=https://jq.qq.com/?_wv=1027&k=44aGRzz][u]428563714[/u][/url]";
             using (SqliteConnection connection = new SqliteConnection("Data Source=" + databaseFullPath))
             {
                 connection.Open();
