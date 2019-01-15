@@ -69,18 +69,6 @@ namespace TMPro
             //Debug.Log("UpdateGeometry called.");
             //base.UpdateGeometry();
         }
-
-        
-        protected override void OnFillVBO(List<UIVertex> vbo)
-        {
-            base.OnFillVBO(vbo);
-            //Debug.Log("OnFillVBO called.");
-
-            //vbo = m_manager.uiVertex.ToList();
-
-
-        }
-        
     }
 }
 
