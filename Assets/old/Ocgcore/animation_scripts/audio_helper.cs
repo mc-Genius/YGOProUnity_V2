@@ -20,6 +20,7 @@ public class audio_helper : MonoBehaviour {
 
     private IEnumerator Download(string url,float vol)
     {
+        played = false;
         using (WWW www = new WWW(url))
         {
             yield return www;
@@ -30,17 +31,12 @@ public class audio_helper : MonoBehaviour {
     }
     public void play(string u,float vol)
     {
-        played = false;
        StartCoroutine(Download(u,vol));
     }
 
     public void change_bgm(string str)
     {
-        played = false;
-        WWW www = new WWW(str);
-
-        AudioClip ac = www.GetAudioClip(true, true);
-        audioMgr.clip = ac;
+        StartCoroutine(Download(str, 100f));
         audioMgr.loop = true;
     }
 
