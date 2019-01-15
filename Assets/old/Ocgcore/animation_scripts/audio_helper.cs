@@ -17,14 +17,21 @@ public class audio_helper : MonoBehaviour {
         }
 	}
     bool played = false;
+
+    private IEnumerator Download(string url,float vol)
+    {
+        using (WWW www = new WWW(url))
+        {
+            yield return www;
+            AudioClip ac = www.GetAudioClip(true, true);
+            audioMgr.clip = ac;
+        }
+        audioMgr.volume = vol;
+    }
     public void play(string u,float vol)
     {
         played = false;
-        WWW www = new WWW(u);
-
-        AudioClip ac = www.GetAudioClip(true, true);
-        audioMgr.clip = ac;
-        audioMgr.volume = vol;
+       StartCoroutine(Download(u,vol));
     }
 
     public void change_bgm(string str)
