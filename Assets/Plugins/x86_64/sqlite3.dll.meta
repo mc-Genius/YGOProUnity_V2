@@ -11,15 +11,49 @@ PluginImporter:
   platformData:
     data:
       first:
+        '': Any
+      second:
+        enabled: 0
+        settings:
+          Exclude Android: 1
+          Exclude Editor: 0
+          Exclude Linux: 0
+          Exclude Linux64: 0
+          Exclude LinuxUniversal: 0
+          Exclude OSXIntel: 0
+          Exclude OSXIntel64: 0
+          Exclude OSXUniversal: 0
+          Exclude Tizen: 1
+          Exclude WebGL: 1
+          Exclude Win: 0
+          Exclude Win64: 0
+          Exclude iOS: 1
+    data:
+      first:
+        '': Editor
+      second:
+        enabled: 0
+        settings:
+          CPU: x86_64
+          OS: AnyOS
+    data:
+      first:
+        Android: Android
+      second:
+        enabled: 0
+        settings:
+          CPU: ARMv7
+    data:
+      first:
         Any: 
       second:
-        enabled: 1
+        enabled: 0
         settings: {}
     data:
       first:
         Editor: Editor
       second:
-        enabled: 0
+        enabled: 1
         settings:
           CPU: x86_64
           DefaultValueInitialized: true
@@ -41,7 +75,7 @@ PluginImporter:
       first:
         Standalone: Linux
       second:
-        enabled: 0
+        enabled: 1
         settings:
           CPU: None
     data:
@@ -57,12 +91,12 @@ PluginImporter:
       second:
         enabled: 1
         settings:
-          CPU: x86_64
+          CPU: AnyCPU
     data:
       first:
         Standalone: OSXIntel
       second:
-        enabled: 0
+        enabled: 1
         settings:
           CPU: None
     data:
@@ -76,14 +110,14 @@ PluginImporter:
       first:
         Standalone: OSXUniversal
       second:
-        enabled: 0
+        enabled: 1
         settings:
-          CPU: x86_64
+          CPU: AnyCPU
     data:
       first:
         Standalone: Win
       second:
-        enabled: 0
+        enabled: 1
         settings:
           CPU: None
     data:
@@ -93,6 +127,26 @@ PluginImporter:
         enabled: 1
         settings:
           CPU: AnyCPU
+    data:
+      first:
+        Tizen: Tizen
+      second:
+        enabled: 0
+        settings: {}
+    data:
+      first:
+        WebGL: WebGL
+      second:
+        enabled: 0
+        settings: {}
+    data:
+      first:
+        iPhone: iOS
+      second:
+        enabled: 0
+        settings:
+          CompileFlags: 
+          FrameworkDependencies: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 
